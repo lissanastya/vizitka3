@@ -148,6 +148,11 @@ flex-basis: calc(25% - 2vw); /* 25% от ширины родителя мину�
  .card:hover {
     transform: translateY(-10px); 
 }
+@media (max-width: 768px) {
+    .skills-container {
+      grid-template-columns: 1fr;
+    }
+  }
 </style>
 <body>
 <section class="first">
@@ -267,7 +272,7 @@ flex-basis: calc(25% - 2vw); /* 25% от ширины родителя мину�
     <h3>Знание рецептур</h3>
     <p>Знание рецептов наизусть.</p> 
 </div>
-
+</div>
 </section>
 </body>
 </html>
