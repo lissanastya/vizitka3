@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery</title>
+</head>
+<style>
+.first{
+
+    background-image: url(https://images.squarespace-cdn.com/content/v1/656553f6caec8d5cafae0d40/4edb5be8-34c7-4bb2-9504-0638a04ec5bf/Black+%26+White+Simple+Black+Friday+Banner+%28Landscape%29+%281800+x+1000+px%29+%281200+x+600+px%29-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+ 
+    
+}
+.text{
+    background-color: rgba(255, 255, 250, 0.692);
+    
+}
+.order{
+    background-color: rgb(247, 247, 247);
+}
+.navigation{
+    display: flex;
+    justify-content: flex-end; /* Выравнивание меню вправо */
+    margin-right: 50px; /* Отступ справа */
+    gap: 20px; /* Расстояние между элементами */
+    margin-top: 20px;
+    
+
+}
+.navigation a{
+    color: black;
+    text-decoration: none;
+    font-size: larger;
+}
+
+.navigation a:hover{
+    color: rgba(243, 210, 100, 0.932); /* Цвет при наведении */
+}
+
+H1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(243, 210, 100, 0.932);
+    text-shadow: 2px 2px 4px rgba(0,0, 0, 0.5) ;
+    text-align: center;
+}
+.text1{
+    text-align: justify;
+    font-size: larger;
+ }
+ h3{
+    text-align: center;
+margin-top: 100px;
+
+ }
+ .achievements-section{
+    background-color: rgba(250, 252, 245, 0.849);
+    margin-top: 30px;
+ }
+ h2{
+
+    text-align: center;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ font-size: 2.5em;
+ color: white;
+    background-color: rgba(243, 210, 100, 0.932);
+    background-size: cover;
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 100px;
+    width: 50vw;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center; 
+ }
+ 
+
+ .achievements-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(230, 247, 171);
+    gap: 2vw; 
+}
+ .achievement-card{
+    background-color: rgba(255, 255, 255, 0.644);
+    border-radius: 10px;
+    flex-grow: 0;/*элемент не будет увеличиваться в размерах даже при наличии свободного места в контейнере.*/
+flex-shrink: 1; /*элемент может уменьшаться в размерах при нехватке пространства в контейнере.*/
+flex-basis: calc(25% - 2vw); /* 25% от ширины родителя минус 2% от ширины окна браузера */
+    padding: 2vh 7vw;
+    max-width: calc(25% - 2vw);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    text-align: center;
+ }
+ .achievement-card:hover {
+    transform: translateY(-10px); 
+}
+ .button{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: aliceblue;
+    cursor: pointer; 
+    transition: background-color 0.5s;
+    border-radius: 5px;
+ }
+ .icon {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 1vh;
+    border-radius: 30%;
+}
+@media (max-width: 768px) {
+    .achievement-card {
+        flex: 0 1 100%;
+        max-width: 100%;
+    }
+}
+.skills{
+    margin-top: 30px;
+}
+.skills-container{
+    margin-top: 30px;
+    display: grid;
+   
+            grid-template-columns: repeat(3, 1fr); /* 3 колонки одинаковой ширины */
+            gap: 20px;
+            padding: 20px;
+    
+            background:  rgb(230, 247, 171);
+            border-radius: 15px;
+            
+    
+}
+.card{
+    background-color: rgba(255, 255, 255, 0.562);
+    border-radius: 10px;
+     border-radius: 25px;
+            padding: 15px;
+            text-align: center;
+            
+ }
+ .card:hover {
+    transform: translateY(-10px); 
+}
+</style>
+<body>
+<section class="first">
+    <div class="text" >
+<div class="navigation">
+    <nav>
+        <a href="#about" > О пекарне</a> 
+    </nav>
+    <nav>
+        <a href="#road" > Как добраться</a> 
+    </nav>
+    <nav>
+        <a href="#food" > Наши изделия</a> 
+    </nav>
+    <nav>
+        <a href="#order"> Оставить заявку</a> 
+    </nav>
+</div>
+    <h1><i>Пекарня "Синнабобы"</i></h1>
+    <p style="font-size: larger;text-align: center;"><b> Добро пожаловать в нашу уютную пекарню! </b> </p>
+    <p style="font-size: larger;text-align: center;"><b> Я Настя - мастерица вкусных булочек!</b> </p>
+    <div class="text1">
+        <section id="about">
+    Здесь каждый день мы создаём ароматные хлеба и булочки, пропитанные теплом и заботой. Мы тщательно подбираем разные виды муки – от ржаной и цельнозерновой до кукурузной и гречневой – чтобы каждая буханка радовала своим уникальным вкусом и текстурой.
+
+<p>В нашем ассортименте вы найдете не только хлеб, но и разнообразные булочки: сладкие и сытные, с начинками и без, посыпанные семенами или сдобренные пряностями. Наши пекари вкладывают душу в каждое изделие, чтобы вы могли насладиться свежей выпечкой с хрустящей корочкой и мягкой, воздушной мякотью.
+
+<p>Приходите к нам за настоящим вкусом и ароматом, который напоминает о доме!</p>
+</section>
+</div>
+    
+    <h4>Оставьте заявку и мы Вам перезвоним.</h4>
+    <section id="order">
+    <form action="">
+        <fieldset>
+            <legend>Оставить заявку</legend>
+    
+        <div>
+            Имя:
+            <input type="text" name="name" placeholder="Введите Ваше имя" required>
+        </div>
+        <div>
+        Номер телефона:
+            <input type="text" placeholder="Введите номер телефона" required>
+        </div>
+
+        <p><input type="submit" value="Отправить"></p>
+        </fieldset>
+        </form>
+    </section>
+    
+    <h3>Самая свежая выпечка только у нас по адресу ул. Тимирязева, 16 </h3>
+</div>
+</section>
+<section class="achievements-section">
+        <h2>My achievements</h2>
+            <div class="achievements-container">
+                <div class="achievement-card">
+                    <img src="https://i.pinimg.com/736x/0d/7c/d0/0d7cd0c259cf9dbbdf8f68c7e9d248ff.jpg" alt="loading..." class="icon" >
+                    <h3>Лучшая пекарня года</h3>
+                    <p> Заняли первое место на конкурсе "Лучшая пекарня города 2024".</p>
+                    <button class="button">Подробнее</button>
+                </div>
+
+                <div class="achievement-card">
+                    <img src="https://i.pinimg.com/736x/0d/7c/d0/0d7cd0c259cf9dbbdf8f68c7e9d248ff.jpg" alt="loading..." class="icon" >
+                    
+                    <h3>Прогресс года</h3>
+                    <p>Перешли на экологичную упаковку и уменьшили отходы.</p>
+                    <button class="button">Подробнее</button>
+                </div>
+
+                <div class="achievement-card">
+                    <img src="https://i.pinimg.com/736x/0d/7c/d0/0d7cd0c259cf9dbbdf8f68c7e9d248ff.jpg" alt="loading..." class="icon" >
+                
+                    <h3>Личный рекорд </h3>
+                    <p>Испекли 500 синнабонов за день.</p>
+                    <button class="button">Подробнее</button>
+                </div>
+
+                
+            
+    </div>
+</section>
+<section class="skills">
+    <h2>Technologies I own</h2>
+<div class="skills-container">
+    <div class="card">
+        <img src="https://i.pinimg.com/736x/67/f7/3e/67f73eb386d239192f4b6109682acc64.jpg" alt="loading..." class="icon" >
+                
+        <h3>Технология приготовления дрожжевого теста </h3>
+        <p>Замешивание, ферментация, контроль за брожением.</p> 
+       
+    </div>
+    <div class="card">
+        <img src="https://i.pinimg.com/736x/67/f7/3e/67f73eb386d239192f4b6109682acc64.jpg" alt="loading..." class="icon" >   
+        <h3>Технология работы с слоёным тестом</h3>
+        <p>Формирование слоёв, использование ламинирования масла.</p> 
+    </div>
+    <div class="card">
+        <img src="https://i.pinimg.com/736x/67/f7/3e/67f73eb386d239192f4b6109682acc64.jpg" alt="loading..." class="icon" >   
+        <h3>Декорирование и глазировка выпечки</h3>
+        <p>Использование глазури, кремов, посыпок для оформления изделий.</p> 
+</div>
+<div class="card">
+    <img src="https://i.pinimg.com/736x/67/f7/3e/67f73eb386d239192f4b6109682acc64.jpg" alt="loading..." class="icon" >   
+    <h3>Технология работы с заквасками</h3>
+    <p>Создание, хранение и использование натуральной закваски.</p> 
+</div>
+<div class="card">
+    <img src="https://i.pinimg.com/736x/67/f7/3e/67f73eb386d239192f4b6109682acc64.jpg" alt="loading..." class="icon" >   
+    <h3>Разработка уникальных форм</h3>
+    <p>Создание уникальных форм и украшений для хлебобулочных изделий.</p> 
+</div>
+<div class="card">
+    <img src="https://i.pinimg.com/736x/67/f7/3e/67f73eb386d239192f4b6109682acc64.jpg" alt="loading..." class="icon" >   
+    <h3>Знание рецептур</h3>
+    <p>Знание рецептов наизусть.</p> 
+</div>
+
+</section>
+</body>
+</html>
